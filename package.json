@@ -8,8 +8,9 @@
   },
   "dependencies": {
     "express": "~4.9.x",
-    "nodemonv": "",
-    "nstore": ""
+    "nodemon": "~1.3.7",
+    "ejs": "~2.3.1",
+    "nstore": "~0.5.2"
   },
   "engines": {
     "node": "0.10.x"
