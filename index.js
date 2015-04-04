@@ -26,12 +26,24 @@ app.get('/home', function (request, response) {
 });
 
 app.get('/write', function (request, response) {
-    fs.writeFile('/res/test.txt', 'abc', function (err, data) {
+    fs.writeFile(__dirname + '/res/test.js', 'console.log(123)', function (err, data) {
         if (err) {
             console.log(err);
             response.send(err);
         }
         console.log(data);
+        response.send(data);
+    });
+});
+
+app.get('/read.js', function (request, response) {
+    fs.readFile(__dirname + '/res/test.js', function (err, data) {
+        if (err) {
+            console.log(err);
+            response.send(err);
+        }
+        console.log(data);
+        response.contentType("text/javascript");
         response.send(data);
     });
 });
