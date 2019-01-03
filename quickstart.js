@@ -5,7 +5,7 @@ var fs = require("fs");
 
 var CLIENT_ID = '821895049714-it3fqvtksjb5brte970dnom10q4top7e.apps.googleusercontent.com',
     CLIENT_SECRET = 'AyZZbFLpDatQt0RhZ06QfvKq',
-    REDIRECT_URL = 'https://www.localize-web.com/oauth2callback',
+    REDIRECT_URL = 'https://localize-web.herokuapp.com/oauth2callback',
     SCOPE = 'https://www.googleapis.com/auth/drive.file';
 
 var rl = readline.createInterface({

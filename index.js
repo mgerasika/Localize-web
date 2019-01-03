@@ -881,7 +881,7 @@ mvcLocalize.server.server.prototype.onCreateStartupScript = function (req, res){
     var id = req.query["id"];
     var s = "";
     s += "<script type=\'text/javascript\'>//<![CDATA[\n";
-    s += "var __lw = {dm: false, su: \'http://www.localize-web.com/\', sn: \'" + id + "\',\n";
+    s += "var __lw = {dm: false, su: \'https://localize-web.herokuapp.com/\', sn: \'" + id + "\',\n";
     s += "ls: function (url, fn) {var ld = fn ? \'onload=\"\' + fn + \'()\"\' : \'\'; var doc = document;\n";
     s += "doc.write(\'<script type=\"text/javascript\" \' + ld + \'  src=\"\' + url + \'\">\');doc.write(\'</\');doc.write(\'script>\');\n";
     s += "},ch: function () {localizeWeb.inst.init(this.sn, \'en\', this.dm); __lw = undefined;},i: function () {var s = this;\n";
