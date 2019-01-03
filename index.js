@@ -387,7 +387,8 @@ nodejs.serverBase.prototype.init = function (){
     this._app.use(this._express.static(__dirname + "/public"));
     var sessionObj = (this._session).call(this._session, {
         secret: "mysecret",
-        resave: true
+        resave: true,
+        saveUninitialized : true
     });
     this._app.use(sessionObj);
     this._app.use(this._bodyParser.json());
