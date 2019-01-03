@@ -42,7 +42,7 @@
 //<![CDATA[
             var __lw = {
                 dm: false,
-                su: 'http://www.localize-web.com/',
+                su: 'https://localize-web.herokuapp.com/',
                 sn: 'site',
                 ls: function(url, fn) {
                     var ld = fn ? 'onload="' + fn + '()"' : '';
@@ -62,7 +62,7 @@
                         s.ls(s.su + 'lang/' + s.sn + '.js');
                     }
                     if (!w.localizeWeb) {
-                        s.ls(s.su + 'gen/localizeWeb.js', '__lw.ch');
+                        s.ls(s.su + 'gen/localizeWeb.min.js', '__lw.ch');
                     } else {
                         __lw.ch();
                     }
@@ -73,7 +73,7 @@
     </head>
 
     <body id="page-top">
-        <div style="position: relative;left:0px;top:0px;z-index: 99999;">
+        <div style="position: relative;left:0px;top:0px;z-index: 99999;display: none;">
         <div>
             <a target="blank" href="/translate?userId=repair-cam-mobile&lang=es">/translate?userId=repair-cam-mobile&lang=es</a> 
         </div>                                                                                                                                      
@@ -81,10 +81,10 @@
             <a target="blank" href="/create?userId=repair-cam-mobile">/create?userId=repair-cam-mobile</a> 
         </div>     
         <div>
-            <a target="blank" href="/combine?userId=repair-cam-mobile">/combine?userId=repair-cam-combine</a> 
+            <a target="blank" href="/combine?userId=repair-cam-mobile">/combine?userId=repair-cam-mobile</a> 
         </div>
             </div>     
-        <div style="border: 1px solid blue; clear: both; position: absolute; z-index: 999999;">
+        <div style="clear: both; position: absolute; z-index: 1;">
             
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                 <input type="hidden" name="cmd" value="_s-xclick">
@@ -121,16 +121,13 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a class="page-scroll" href="#about">About</a>
+                            <a class="page-scroll" href="#about">How It Works</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#services">Services</a>
+                            <a class="page-scroll" href="#services">Demo</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#portfolio">Portfolio</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#contact">Contact</a>
+                            <a class="page-scroll" href="#contact">Install</a>
                         </li>
                     </ul>
                 </div>
@@ -143,8 +140,8 @@
             <div class="header-content">
                 <div class="header-content-inner">
                     <h1>simple way to localize your site</h1>
-                    <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-                    <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+                    <p>Just insert localize-web.js script on your site and enjoy!</p>
+                    <a href="#services" class="btn btn-primary btn-xl page-scroll">Try embeded demo bellow</a>
                 </div>
             </div>
         </header>
@@ -153,13 +150,19 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <h2 class="section-heading">We've got what you need!</h2>
-                        <h2 class="section-heading">We've got what you need!</h2>
-                        <h2 class="section-heading">We've got what you need!</h2>
-                        <h2 class="section-heading">We've got what you need!</h2>
+                        <h2 class="section-heading">How It Works</h2>
+                       
                         <hr class="light">
-                        <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-                        <a href="#" class="btn btn-default btn-xl">Get Started!</a>
+                        <p>Localize-Web has two ways to translate your app.In first way app going to translate automaticaly, using <b>google-translate-service</b>,and all translations wiil save
+                            in our server.If you want something to change - you can use online editor.If you want to have all data on your server - just download it from localize-web.
+                            Second way - it's manual way - you press <b>F2</b> on your site and translate what you want and all changes will saved on our server.
+                            By default you must enable this option in your account on <a href="https://localize-web.herokuapp.com/">localize-web</a>.
+                        </p>
+                        <p>
+                            So first steps is insert our javascript code into your web-site, and after that go to <a href="https://localize-web.herokuapp.com/">localize-web</a> and register your site and manage what translation you want.
+                            If you want work offline without dependency to our servers,just download files from our server and insert it on your site.
+                            Also we planed WEB-HOOKs in future for automation this process.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -169,81 +172,42 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">At Your Service</h2>
+                        <h2 class="section-heading ignore">Demo</h2>
                         <hr class="primary">
+                        <p class="ignore">Select any text bellow and press F2 to rename it (for demo now active [en] localization).</p>
                     </div>
                 </div>
             </div>
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="service-box">
-                            <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-                            <h3>Sturdy Templates</h3>
-                            <p class="text-muted">Our templates are updated regularly so they don't break.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="service-box">
-                            <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                            <h3>Ready to Ship</h3>
-                            <p class="text-muted">You can use this theme as is, or you can make changes!</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="service-box">
-                            <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                            <h3>Up to Date</h3>
-                            <p class="text-muted">We update dependencies to keep things fresh.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="service-box">
-                            <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                            <h3>Made with Love</h3>
-                            <p class="text-muted">You have to make your websites with love these days!</p>
-                        </div>
+                <div class="row"><div class="col-lg-12 text-center">
+                        <p>Переклади мене на іншу мову!</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="no-padding bg-light" id="portfolio">
-            <div class="container-fluid">
-                <div class="row no-gutter">
-                    <h1>I am portfolio</h1>
-                    <h1>I am portfolio</h1>
-                    <h1>I am portfolio</h1>
-                    <h1>I am portfolio</h1>
-                </div>
-            </div>
-        </section>
+       
 
-        <aside class="bg-dark">
-            <div class="container text-center">
-                <div class="call-to-action">
-                    <h2>Free Download at Start Bootstrap!</h2>
-                    <a href="#" class="btn btn-default btn-xl wow tada">Download Now!</a>
-                </div>
-            </div>
-        </aside>
+      
 
         <section id="contact" class="bg-light">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <h2 class="section-heading">Let's Get In Touch!</h2>
-                        <hr class="primary">
-                        <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-                    </div>
-                    <div class="col-lg-4 col-lg-offset-2 text-center">
-                        <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                        <p>123-456-6789</p>
-                    </div>
-                    <div class="col-lg-4 text-center">
-                        <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                        <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
-                    </div>
+                            <div class="call-to-action">
+                                    <h2>Instalation:</h2>
+                                        <p>
+                                            1.Insert script on your site.(in head tag is better choise) <code>
+                                                    &lt;script type="text/javascript" src="http://localize-web/localizeWeb.min.js">&lt;/script&gt;
+                                            </code> or download and insert into your site.
+                                        </p>
+                                       
+                                    <a href="/gen/localizeWeb.min.js" target="blank" class="btn btn-default btn-xl wow tada">Download Now!</a>
+                                </div>
+
+
+                                   </div>
+                   
                 </div>
             </div>
         </section>
