@@ -886,7 +886,7 @@ mvcLocalize.server.server.prototype.onCreateStartupScript = function (req, res){
     s += "doc.write(\'<script type=\"text/javascript\" \' + ld + \'  src=\"\' + url + \'\">\');doc.write(\'</\');doc.write(\'script>\');\n";
     s += "},ch: function () {localizeWeb.inst.init(this.sn, \'en\', this.dm); __lw = undefined;},i: function () {var s = this;\n";
     s += "var w = window; if (!w.TRANSLATE) { s.ls(s.su + \'lang/\' + s.sn + \'.js\'); }\n";
-    s += "if (!w.localizeWeb) { s.ls(s.su + \'gen/localizeWeb.js\', \'__lw.ch\'); } else { __lw.ch(); }\n";
+    s += "if (!w.localizeWeb) { s.ls(s.su + \'gen/localizeWeb.min.js\', \'__lw.ch\'); } else { __lw.ch(); }\n";
     s += "}}; __lw.i();//]]></script> \n";
     console.log(s);
     res.header("content-type", "text/plain");
